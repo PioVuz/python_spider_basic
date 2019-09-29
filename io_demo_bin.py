@@ -26,7 +26,7 @@ def test_pickle_loads():
 
 # 使用os模块中的fork方式实现多进程(仅限于linux和unix,mac)
 def test_fork():
-    print 'current Process (%s) start ...' % (os.getpid())
+    print('current Process (%s) start ...' % (os.getpid()))
     pid = os.fork()
     if pid < 0:
         print('error in fork')
